@@ -1,6 +1,6 @@
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
-import Footer from "@/components/shadcn-studio/blocks/footer-component-01/footer-component-01";
-import Header from "@/components/shadcn-studio/blocks/hero-section-41/header";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { navigationData } from "@/data/navigationData";
 import "@/styles/globals.css";

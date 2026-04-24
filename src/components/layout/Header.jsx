@@ -10,8 +10,6 @@ import MenuNavigation from "@/components/shadcn-studio/blocks/menu-navigation";
 
 import { cn } from "@/lib/utils";
 
-import BistroLogo from "@/assets/svg/bistro-logo";
-import { ModeToggle } from "@/components/ModeToggle";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Header = ({ navigationData, className }) => {

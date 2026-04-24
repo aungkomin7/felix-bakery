@@ -13,7 +13,7 @@ const Footer = () => {
           </div>
         </a>
 
-        <div className="flex items-center gap-5 whitespace-nowrap">
+        {/* <div className="flex items-center gap-5 whitespace-nowrap">
           <a
             href="#"
             className="opacity-80 transition-opacity duration-300 hover:opacity-100"
@@ -38,7 +38,7 @@ const Footer = () => {
           >
             Career
           </a>
-        </div>
+        </div> */}
 
         <div className="flex items-center gap-4">
           <a href="#">

@@ -1,29 +1,30 @@
 import {
   Clock8Icon,
   MapPinIcon,
-  BriefcaseBusinessIcon,
   PhoneIcon,
+  Mail,
 } from "lucide-react";
 
 export const contactInfo = [
   {
-    title: "Office Hours",
+    title: "Hours",
     icon: Clock8Icon,
-    description: "Monday-Friday\n8:00 am to 5:00 pm",
+    description: "Monday-Sunday\n7:00 am to 7:00 pm",
   },
   {
     title: "Our Address",
     icon: MapPinIcon,
-    description: "802 Perston Rd,Maine\n96812, USA",
+    description: "159 ซ. นราธิวาสราชนครินทร์\n8 Yan Nawa, Sathon,\n Bangkok 10120",
   },
   {
-    title: "Office 2",
-    icon: BriefcaseBusinessIcon,
-    description: "802 Perston Rd,Maine\n96812, USA",
+    title: "Email",
+    icon: Mail,
+    description: "felixmesika1975@gmail.com",
   },
   {
-    title: "Get in Touch",
+    title: "Phone",
     icon: PhoneIcon,
-    description: "+1-316-888-9685\n+1-316-477-0169",
+    description: "+66-993-688-432",
   },
 ];
+
