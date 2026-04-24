@@ -20,7 +20,7 @@ export function ThemeToggle() {
   return (
     <div className="flex flex-col justify-center">
       <Toggle
-        className="group size-8 rounded-full md:size-9 cursor-pointer bg-slate-500/10 dark:bg-slate-500/10 data-[state=on]:bg-transparent data-[state=on]:hover:bg-muted"
+        className="group size-8 rounded-full md:size-9 cursor-pointer bg-transparent border  dark:bg-secondary/25 data-[state=on]:bg-transparent data-[state=on]:hover:bg-muted"
         pressed={isDark}
         onPressedChange={() =>
           setTheme(isDark ? "light" : "dark")

@@ -37,13 +37,13 @@ const AboutSection = ({ aboutInfo }) => {
             <div className="grid gap-6 sm:grid-cols-2">
               {aboutInfo.map((info, index) => (
                 <Card className="border-none shadow-none" key={index}>
-                  <CardContent className="flex flex-col items-center gap-4 text-left">
+                  <CardContent className="flex flex-col items-center gap-4 text-center">
                     <Avatar className="size-9 border">
                       <AvatarFallback className="bg-transparent [&>svg]:size-5">
                         <info.icon />
                       </AvatarFallback>
                     </Avatar>
-                    <div className="space-y-3">
+                    <div className="space-y-3 ">
                       <h4 className="text-lg font-semibold">{info.title}</h4>
                       <div className="text-muted-foreground text-base font-medium">
                         {info.description.split("\n").map((line, idx) => (
