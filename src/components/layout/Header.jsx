@@ -42,7 +42,11 @@ const Header = ({ navigationData, className }) => {
         {/* Logo */}
         <a href="#" className="flex items-center  gap-3">
           {/* <BistroLogo /> */}
-          <img src="felix-logo.jpg" className="size-10 rounded-full md:size-12" alt="felix" />
+          <img
+            src="felix-logo.jpg"
+            className="size-10 rounded-full md:size-12"
+            alt="felix"
+          />
           <span className="text-primary text-[20px] font-semibold">
             Felix Bakery
           </span>
@@ -51,15 +55,11 @@ const Header = ({ navigationData, className }) => {
         {/* Navigation */}
         <MenuNavigation
           navigationData={navigationData}
-          className="max-lg:hidden [&_[data-slot=navigation-menu-list]]:gap-1"
+          className="max-lg:hidden  **:data-[slot=navigation-menu-list]:gap-1"
         />
 
         {/* Actions */}
         <div className="flex gap-4">
-          {/* <Button className="rounded-full max-sm:hidden" asChild>
-            <a href="#">Book table</a>
-          </Button> */}
-          {/* <ModeToggle /> */}
           <ThemeToggle />
 
           {/* Navigation for small screens */}
