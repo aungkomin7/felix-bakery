@@ -15,14 +15,7 @@ const ContactSection = ({ contactInfo }) => {
         </div>
 
         <div className="grid items-center gap-12 lg:grid-cols-2">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4875.337103972348!2d100.5324993!3d13.715760399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e298cb618e7853%3A0x513104cb7bb6725!2sFELIX%20BAKERY%20%26%20COFFEE!5e1!3m2!1sen!2sth!4v1777044606604!5m2!1sen!2sth"
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Felix Bakery Location"
-            className="size-full rounded-md object-cover h-96 md:h-full"
-          />
+          
 
           <div>
             <h3 className="mb-6 text-2xl font-semibold">
@@ -55,7 +48,19 @@ const ContactSection = ({ contactInfo }) => {
                 </Card>
               ))}
             </div>
+
+
           </div>
+
+
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4875.337103972348!2d100.5324993!3d13.715760399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e298cb618e7853%3A0x513104cb7bb6725!2sFELIX%20BAKERY%20%26%20COFFEE!5e1!3m2!1sen!2sth!4v1777044606604!5m2!1sen!2sth"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Felix Bakery Location"
+            className="size-full rounded-md object-cover h-96 md:h-full"
+          />
         </div>
       </div>
     </section>
