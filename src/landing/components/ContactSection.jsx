@@ -21,7 +21,7 @@ const ContactSection = ({ contactInfo }) => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Felix Bakery Location"
-            className="size-full rounded-md object-cover max-lg:max-h-70"
+            className="size-full rounded-md object-cover h-96 md:h-full"
           />
 
           <div>
