@@ -6,7 +6,7 @@ import HeroSection from "../components/HeroSection";
 import Gallery from "../components/Gallery";
 import TestimonialsComponent from "../components/TestimonialsComponent";
 import AboutSection from "../components/AboutSection";
-import ContactSection from "../components/contactSection";
+import ContactSection from "../components/ContactSection";
 import { contactInfo } from "@/data/contactInfo";
 import { aboutInfo } from "@/data/aboutInfo";
 
