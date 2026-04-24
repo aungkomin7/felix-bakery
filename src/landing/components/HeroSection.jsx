@@ -108,7 +108,7 @@ const HeroSection = ({ menudata }) => {
                   <ArrowRightIcon className="transition-transform duration-200 group-hover:translate-x-0.5" />
                 </a>
               </Button>
-              <Button
+              {/* <Button
                 asChild
                 variant="outline"
                 size="lg"
@@ -118,7 +118,7 @@ const HeroSection = ({ menudata }) => {
                   Explore Our Menu
                   <ArrowRightIcon className="transition-transform duration-200 group-hover:translate-x-0.5" />
                 </a>
-              </Button>
+              </Button> */}
             </div>
           </div>
 

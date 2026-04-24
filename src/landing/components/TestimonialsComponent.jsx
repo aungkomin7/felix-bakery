@@ -71,12 +71,12 @@ const TestimonialsComponent = ({ testimonials }) => {
 
                       <div className="flex-1">
                         <h4 className="font-medium">{testimonial.name}</h4>
-                        <p className="text-muted-foreground text-sm">
+                        {/* <p className="text-muted-foreground text-sm">
                           {testimonial.role} at{" "}
                           <span className="text-card-foreground font-semibold">
                             {testimonial.company}
                           </span>
-                        </p>
+                        </p> */}
                       </div>
                     </div>
 
