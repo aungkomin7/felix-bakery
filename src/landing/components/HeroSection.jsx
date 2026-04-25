@@ -123,7 +123,7 @@ const HeroSection = ({ menudata }) => {
           </div>
 
           <Carousel
-            className="w-full lg:col-span-2"
+            className="w-full lg:col-span-2"  
             setApi={setMainApi}
             plugins={[plugin.current]}
             opts={{

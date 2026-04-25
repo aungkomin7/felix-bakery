@@ -13,6 +13,29 @@ export function ThemeToggle() {
     setMounted(true);
   }, []);
 
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      // Ignore typing in inputs / textarea
+      const tag = document.activeElement?.tagName;
+
+      if (
+        tag === "INPUT" ||
+        tag === "TEXTAREA" ||
+        document.activeElement?.isContentEditable
+      ) {
+        return;
+      }
+
+      if (e.key.toLowerCase() === "d") {
+        setTheme(theme === "dark" ? "light" : "dark");
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [theme, setTheme]);
+
   if (!mounted) return null;
 
   const isDark = theme === "dark";
@@ -20,12 +43,10 @@ export function ThemeToggle() {
   return (
     <div className="flex flex-col justify-center">
       <Toggle
-        className="group size-8 rounded-full md:size-9 cursor-pointer bg-transparent border  dark:bg-secondary/25 data-[state=on]:bg-transparent data-[state=on]:hover:bg-muted"
         pressed={isDark}
-        onPressedChange={() =>
-          setTheme(isDark ? "light" : "dark")
-        }
+        onPressedChange={() => setTheme(isDark ? "light" : "dark")}
         aria-label={`Switch to ${isDark ? "light" : "dark"} mode`}
+        className="group size-8 cursor-pointer rounded-full border bg-transparent md:size-9 dark:bg-secondary/25 data-[state=on]:bg-transparent data-[state=on]:hover:bg-muted"
       >
         <Moon
           size={16}

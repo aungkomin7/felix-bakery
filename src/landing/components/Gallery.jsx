@@ -1,5 +1,9 @@
+"use client";
+import { motion } from "motion/react";
+import { Tilt } from "@/components/Tilt";
 import { cn } from "@/lib/utils";
 import { Instagram } from "@aliimam/icons";
+import { InView } from "@/components/InView";
 
 const Gallery = ({ sections }) => {
   return (
@@ -8,13 +12,6 @@ const Gallery = ({ sections }) => {
         {/* Header */}
         <div className="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
           <h2 className="text-2xl font-semibold md:text-3xl lg:text-4xl">
-            {/* <span className='relative z-1'>
-              Explore our
-              <span
-                className='bg-primary absolute bottom-1 left-0 -z-1 h-px w-full'
-                aria-hidden='true'></span>
-            </span>{' '}
-            Gallery */}
             Feast Your <span className="text-primary">Eyes</span>
           </h2>
           <p className="text-muted-foreground text-xl">
@@ -24,25 +21,61 @@ const Gallery = ({ sections }) => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid gap-6 md:grid-cols-2">
-          {sections.map((section, sectionIndex) => (
-            <div
-              key={sectionIndex}
-              className={cn({
-                "grid grid-cols-2 gap-6": section.type === "grid",
-              })}
-            >
-              {section.images.map((image, imageIndex) => (
-                <img
-                  key={imageIndex}
-                  src={image.src}
-                  alt={image.alt}
-                  className="rounded-lg object-cover"
-                />
-              ))}
-            </div>
-          ))}
-        </div>
+        <InView
+          viewOptions={{ once: true, margin: "0px 0px -250px 0px" }}
+          variants={{
+            hidden: {
+              opacity: 0,
+            },
+            visible: {
+              opacity: 1,
+              transition: {
+                staggerChildren: 0.09,
+              },
+            },
+          }}
+        >
+          <div className="grid gap-6 md:grid-cols-2">
+            {sections.map((section, sectionIndex) => (
+              <div
+                key={sectionIndex}
+                className={cn({
+                  "grid grid-cols-2 gap-6": section.type === "grid",
+                })}
+              >
+                {section.images.map((image, imageIndex) => {
+                  return (
+                    <motion.div
+                      variants={{
+                        hidden: {
+                          opacity: 0,
+                          scale: 0.8,
+                          filter: "blur(10px)",
+                        },
+                        visible: {
+                          opacity: 1,
+                          scale: 1,
+                          filter: "blur(0px)",
+                        },
+                      }}
+                      key={imageIndex}
+                      className="mb-4"
+                    >
+                      <Tilt>
+                        <img
+                          key={imageIndex}
+                          src={image.src}
+                          alt={image.alt}
+                          className="rounded-lg object-cover"
+                        />
+                      </Tilt>
+                    </motion.div>
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+        </InView>
       </div>
       <div className="text-center mt-10 ">
         <a

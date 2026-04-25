@@ -10,9 +10,11 @@ import ContactSection from "../components/ContactSection";
 import { contactInfo } from "@/data/contactInfo";
 import { aboutInfo } from "@/data/aboutInfo";
 
+
 const HomePage = () => {
   return (
     <>
+      
       <HeroSection menudata={menudata} />
       <AboutSection aboutInfo={aboutInfo} />
       <Gallery sections={galleryData} />
