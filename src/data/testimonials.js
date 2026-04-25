@@ -1,7 +1,7 @@
 export const testimonials = [
   {
     name: "Emma Aarons",
-    role: "CEO & Co Founder",
+    role: "2 months ago",
     company: "Zendesk",
     avatar:
       "https://cdn.shadcnstudio.com/ss-assets/avatar/avatar-1.png?width=40&height=40&format=auto",
@@ -11,7 +11,7 @@ export const testimonials = [
   },
   {
     name: "Merlyn Fernandes",
-    role: "Product manager",
+    role: "3 months ago",
     company: "Orbit",
     avatar:
       "https://cdn.shadcnstudio.com/ss-assets/avatar/avatar-2.png?width=40&height=40&format=auto",
@@ -21,7 +21,7 @@ export const testimonials = [
   },
   {
     name: "Sharon",
-    role: "Lead Designer",
+    role: "a month ago",
     company: "Figma",
     avatar:
       "https://cdn.shadcnstudio.com/ss-assets/avatar/avatar-3.png?width=40&height=40&format=auto",
@@ -31,7 +31,7 @@ export const testimonials = [
   },
   {
     name: "maor mazor",
-    role: "Frontend Developer",
+    role: "2 months ago",
     company: "Vercel",
     avatar:
       "https://cdn.shadcnstudio.com/ss-assets/avatar/avatar-4.png?width=40&height=40&format=auto",
@@ -41,7 +41,7 @@ export const testimonials = [
   },
   {
     name: "Elad Kurtz",
-    role: "Frontend Developer",
+    role: "3 months ago",
     company: "Vercel",
     avatar:
       "https://cdn.shadcnstudio.com/ss-assets/avatar/avatar-4.png?width=40&height=40&format=auto",

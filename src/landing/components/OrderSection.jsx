@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "motion/react";
+import { DockDemo } from "@/components/DockDemo";
 
 const OrderSection = () => {
   return (
@@ -15,34 +16,21 @@ const OrderSection = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
           >
-            <p className="text-primary mb-2 text-sm font-semibold uppercase">
+            <p className="text-primary mb-2 text-sm font-medium uppercase">
               order now
             </p>
 
-            <h2 className="mb-6 text-3xl font-semibold md:text-4xl">
+            <h2 className="mb-6  text-2xl font-semibold sm:text-3xl lg:text-4xl">
               Freshly Baked <span className="text-primary">Delivered</span> to
               You
             </h2>
 
-            <p className="text-muted-foreground mb-8 text-lg">
+            <p className="text-muted-foreground mb-8 text-xl">
               Craving artisan bread, pastries, or cakes? Place your order today
               and enjoy fresh bakery favorites made with love every morning.
             </p>
 
-            <div className="flex items-center gap-x-2">
-              <a href="#">
-                <img  className="border bg-white" src="lineman.svg" alt="lineman" />
-              </a>
-              <a href="#">
-                <img className="border bg-white" src="grab-food.svg" alt="grab" />
-              </a>
-              <a href="#">
-                <img className="border bg-white" src="shopee.svg" alt="shopee" />
-              </a>
-              <a href="#">
-                <img className="border bg-white" src="lazada.svg" alt="lazada" />
-              </a>
-            </div>
+            <DockDemo />
           </motion.div>
 
           {/* Right Cards */}

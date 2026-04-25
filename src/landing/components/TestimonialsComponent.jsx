@@ -68,13 +68,14 @@ const TestimonialsComponent = ({ testimonials }) => {
                       </Avatar>
 
                       <div className="flex-1">
-                        <h4 className="font-medium">{testimonial.name}</h4>
-                        {/* <p className="text-muted-foreground text-sm">
-                          {testimonial.role} at{" "}
+                        <h4 className="font-medium ">{testimonial.name}</h4>
+                        <p className="text-muted-foreground text-xs">
+                          {testimonial.role}
+                          {/* at{" "}
                           <span className="text-card-foreground font-semibold">
                             {testimonial.company}
-                          </span>
-                        </p> */}
+                          </span> */}
+                        </p>
                       </div>
                     </div>
 
