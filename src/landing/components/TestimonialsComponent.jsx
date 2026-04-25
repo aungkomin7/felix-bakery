@@ -1,4 +1,3 @@
-import { Tilt } from "@/components/Tilt";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -52,43 +51,43 @@ const TestimonialsComponent = ({ testimonials }) => {
           <CarouselContent className="sm:-ml-6 ">
             {testimonials.map((testimonial, index) => (
               <CarouselItem key={index} className="sm:pl-6 lg:basis-1/2 ">
-                  <Card className="hover:border-primary h-full transition-colors duration-300 ">
-                    <CardContent className="space-y-5 ">
-                      <div className="flex items-center gap-3 ">
-                        <Avatar className="size-10 rounded-full">
-                          <AvatarImage
-                            src={testimonial.avatar}
-                            alt={testimonial.name}
-                          />
-                          <AvatarFallback className="rounded-full text-sm">
-                            {testimonial.name
-                              .split(" ", 2)
-                              .map((n) => n[0])
-                              .join("")}
-                          </AvatarFallback>
-                        </Avatar>
+                <Card className="hover:border-primary h-full transition-colors duration-300  ">
+                  <CardContent className="space-y-5 ">
+                    <div className="flex items-center gap-3  ">
+                      <Avatar className="size-10 rounded-full">
+                        <AvatarImage
+                          src={testimonial.avatar}
+                          alt={testimonial.name}
+                        />
+                        <AvatarFallback className="rounded-full text-sm">
+                          {testimonial.name
+                            .split(" ", 2)
+                            .map((n) => n[0])
+                            .join("")}
+                        </AvatarFallback>
+                      </Avatar>
 
-                        <div className="flex-1">
-                          <h4 className="font-medium">{testimonial.name}</h4>
-                          {/* <p className="text-muted-foreground text-sm">
+                      <div className="flex-1">
+                        <h4 className="font-medium">{testimonial.name}</h4>
+                        {/* <p className="text-muted-foreground text-sm">
                           {testimonial.role} at{" "}
                           <span className="text-card-foreground font-semibold">
                             {testimonial.company}
                           </span>
                         </p> */}
-                        </div>
                       </div>
+                    </div>
 
-                      <Rating
-                        readOnly
-                        variant="yellow"
-                        size={24}
-                        value={testimonial.rating}
-                        precision={0.5}
-                      />
-                      <p>{testimonial.content}</p>
-                    </CardContent>
-                  </Card>
+                    <Rating
+                      readOnly
+                      variant="yellow"
+                      size={24}
+                      value={testimonial.rating}
+                      precision={0.5}
+                    />
+                    <p>{testimonial.content}</p>
+                  </CardContent>
+                </Card>
               </CarouselItem>
             ))}
           </CarouselContent>

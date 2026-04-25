@@ -1,7 +1,8 @@
 import { Separator } from "@/components/ui/separator";
 
 import Logo from "@/components/shadcn-studio/logo";
-import { Facebook, Instagram, WhatsappRounded, Youtube } from "@aliimam/icons";
+// import { Facebook, FacebookDoodle, Instagram, WhatsappRounded, Youtube } from "@aliimam/icons";
+import {  Facebook, Instagram, WhatsApp, YouTube } from "@aliimam/logos";
 
 const Footer = () => {
   return (
@@ -45,19 +46,20 @@ const Footer = () => {
             href="https://web.facebook.com/felixbakery/?_rdc=1&_rdr#"
             target="_blank"
           >
-            <Facebook size={23} />
+            {/* <Facebook size={23} /> */}
+            <Facebook />
           </a>
           <a href="https://www.instagram.com/felixmesika" target="_blank">
             <Instagram size={23} />
           </a>
           <a href="https://www.youtube.com/@felixbakery4520" target="_blank">
-            <Youtube size={23} />
+            <YouTube size={23} />
           </a>
           <a
             href="https://api.whatsapp.com/send?phone=66993688432"
             target="_blank"
           >
-            <WhatsappRounded size={23} />
+            <WhatsApp size={23} />
           </a>
         </div>
       </div>

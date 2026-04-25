@@ -21,10 +21,10 @@ export default function RootLayout({ children }) {
           disableTransitionOnChange
         >
           <main className="h-screen flex flex-col pt-17.5">
-            <Header navigationData={navigationData} />
-            {children}
-            <ScrollToTopButton />
-            <Footer />
+              <Header navigationData={navigationData} />
+              {children}
+              <ScrollToTopButton />
+              <Footer />
           </main>
         </ThemeProvider>
       </body>

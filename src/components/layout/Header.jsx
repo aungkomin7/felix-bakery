@@ -52,7 +52,7 @@ const Header = ({ navigationData, className }) => {
     >
       <div
         className={cn(
-          "h-[70px] w-full border-b transition-all duration-300",
+          "h-17.5 w-full border-b transition-all duration-300",
           isScrolled
             ? "bg-background/95 backdrop-blur shadow-md"
             : "bg-transparent border-transparent",

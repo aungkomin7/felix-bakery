@@ -9,16 +9,18 @@ import AboutSection from "../components/AboutSection";
 import ContactSection from "../components/ContactSection";
 import { contactInfo } from "@/data/contactInfo";
 import { aboutInfo } from "@/data/aboutInfo";
-
+import OrderSection from "../components/OrderSection";
+import MenuSection from "../components/MenuSection";
 
 const HomePage = () => {
   return (
     <>
-      
       <HeroSection menudata={menudata} />
-      <AboutSection aboutInfo={aboutInfo} />
-      <Gallery sections={galleryData} />
+      {/* <MenuSection /> */}
+      <OrderSection />
       <TestimonialsComponent testimonials={testimonials} />
+      <Gallery sections={galleryData} />
+      <AboutSection aboutInfo={aboutInfo} />
       <ContactSection contactInfo={contactInfo} />
     </>
   );

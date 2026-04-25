@@ -4,6 +4,7 @@ import { Tilt } from "@/components/Tilt";
 import { cn } from "@/lib/utils";
 import { Instagram } from "@aliimam/icons";
 import { InView } from "@/components/InView";
+import { SparklesText } from "@/components/ui/sparkles-text";
 
 const Gallery = ({ sections }) => {
   return (
@@ -11,9 +12,9 @@ const Gallery = ({ sections }) => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
-          <h2 className="text-2xl font-semibold md:text-3xl lg:text-4xl">
+          <SparklesText className="text-2xl font-semibold md:text-3xl lg:text-4xl">
             Feast Your <span className="text-primary">Eyes</span>
-          </h2>
+          </SparklesText>
           <p className="text-muted-foreground text-xl">
             A visual journey through our kitchen. Follow us on Instagram for
             daily updates and behind-the-scenes content.
