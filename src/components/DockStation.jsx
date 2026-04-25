@@ -38,7 +38,7 @@ const apps = [
   },
 ];
 
-export function DockDemo() {
+export function DockStation() {
   return (
     <div className="relative">
       <TooltipProvider delayDuration={120}>

@@ -4,6 +4,10 @@ export const navigationData = [
     href: "#aboutUs",
   },
   {
+    title: "Menu",
+    href: "#menu",
+  },
+  {
     title: "Gallery",
     href: "#gallery",
   },

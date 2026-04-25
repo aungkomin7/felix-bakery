@@ -2,11 +2,11 @@
 
 import React from "react";
 import { motion } from "motion/react";
-import { DockDemo } from "@/components/DockDemo";
+import { DockStation } from "@/components/DockStation";
 
 const OrderSection = () => {
   return (
-    <section id="order" className="bg-muted py-8 sm:py-16 lg:py-24">
+    <section id="orderSection" className="bg-muted py-8 sm:py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-2">
           {/* Left Content */}
@@ -30,7 +30,7 @@ const OrderSection = () => {
               and enjoy fresh bakery favorites made with love every morning.
             </p>
 
-            <DockDemo />
+            <DockStation />
           </motion.div>
 
           {/* Right Cards */}

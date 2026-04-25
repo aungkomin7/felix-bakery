@@ -11,16 +11,18 @@ import { contactInfo } from "@/data/contactInfo";
 import { aboutInfo } from "@/data/aboutInfo";
 import OrderSection from "../components/OrderSection";
 import MenuSection from "../components/MenuSection";
+import { MarqueeDemo } from "@/components/MarqueeDemo";
+// import { MarqueeDemo } from "@/components/MarqueeDemo";
 
 const HomePage = () => {
   return (
     <>
       <HeroSection menudata={menudata} />
-      {/* <MenuSection /> */}
+      <MenuSection />
       <OrderSection />
       <TestimonialsComponent testimonials={testimonials} />
-      <Gallery sections={galleryData} />
       <AboutSection aboutInfo={aboutInfo} />
+      <Gallery sections={galleryData} />
       <ContactSection contactInfo={contactInfo} />
     </>
   );
