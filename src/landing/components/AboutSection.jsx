@@ -1,18 +1,20 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Tilt } from "@/components/Tilt";
 
 const AboutSection = ({ aboutInfo }) => {
   return (
     <section id="aboutUs" className="bg-muted py-8 sm:py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-4">
         <div className="grid items-center gap-12 lg:grid-cols-2">
-          <img
-            // src="https://cdn.shadcnstudio.com/ss-assets/blocks/marketing/contact-us/image-1.png"
-            src="felix.jpg"
-            alt="Contact illustration"
-            className="size-full rounded-md object-cover object-top  max-lg:max-h-70"
-          />
+          <div className="border p-4 dark:border-gray-50/10 size-full rounded-xl dark:bg-gray-50/10 dark:hover:bg-gray-50/15 border-gray-950/10 bg-gray-950/1 hover:bg-gray-950/5">
+            
+            <img
+              src="https://cdn.shadcnstudio.com/ss-assets/blocks/marketing/contact-us/image-1.png"
+              alt="Contact illustration"
+              className="size-full rounded-lg object-cover object-top  max-lg:max-h-70  "
+            />
+          </div>
+
           <div>
             <p className="text-primary text-sm font-medium uppercase mb-2">
               about us

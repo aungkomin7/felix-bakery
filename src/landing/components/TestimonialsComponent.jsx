@@ -8,6 +8,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Rating } from "@/components/ui/rating";
+import { GoogleIcon } from "@aliimam/logos";
 
 const TestimonialsComponent = ({ testimonials }) => {
   return (
@@ -73,10 +74,11 @@ const TestimonialsComponent = ({ testimonials }) => {
                           {testimonial.role}
                           {/* at{" "}
                           <span className="text-card-foreground font-semibold">
-                            {testimonial.company}
+                          {testimonial.company}
                           </span> */}
                         </p>
                       </div>
+                      <GoogleIcon />
                     </div>
 
                     <Rating

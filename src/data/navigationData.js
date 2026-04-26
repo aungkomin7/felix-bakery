@@ -19,4 +19,8 @@ export const navigationData = [
     title: "Contact us",
     href: "#contactUs",
   },
+   {
+    title: "Delivery",
+    href: "#orderSection",
+  },
 ];

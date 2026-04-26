@@ -52,7 +52,7 @@ export function DockStation() {
             <DockIcon key={index} className="bg-black/10 dark:bg-white/10">
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <a href={app.href}>
+                  <a href={app.href} target="_blank">
                     <img
                       src={app.image}
                       alt={app.name}

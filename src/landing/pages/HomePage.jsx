@@ -11,8 +11,6 @@ import { contactInfo } from "@/data/contactInfo";
 import { aboutInfo } from "@/data/aboutInfo";
 import OrderSection from "../components/OrderSection";
 import MenuSection from "../components/MenuSection";
-import { MarqueeDemo } from "@/components/MarqueeDemo";
-// import { MarqueeDemo } from "@/components/MarqueeDemo";
 
 const HomePage = () => {
   return (

@@ -6,7 +6,7 @@ import { navigationData } from "@/data/navigationData";
 import "@/styles/globals.css";
 
 export const metadata = {
-  title: "Home - Felix Bakery",
+  title: "Felix Bakery",
   description: "Felix Bakery",
 };
 
